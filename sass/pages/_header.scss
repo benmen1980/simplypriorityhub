@@ -1,0 +1,117 @@
+header#masthead{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 8rem);
+    margin: auto;
+    padding: 2.8rem 0;
+    border-bottom: 1px solid #bdb7b7;
+    @media (min-width: 321px) and (max-width: 1023px) {
+        width: calc(100% - 2rem);
+        padding: 0 0;
+        border-bottom: 0;
+    }
+  .site-branding{
+    justify-content: flex-start;
+    padding-left: 0;
+    text-align: left;
+    display: flex;
+    margin-right: 4rem;
+    max-width: 50%;
+    align-items: center;
+    min-width: fit-content;
+    @media (min-width: 321px) and (max-width: 1023px) {
+        margin-right:0;
+    }
+    .site-title{
+        font-size: 2.4rem;
+        font-weight: 700; 
+        a{
+            color: #42158C;
+        }
+        @media (min-width: 321px) and (max-width: 1023px) {
+            font-size: 2rem;
+        }
+    }
+    .site-description{
+        margin: 0 0 0 2.4rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        @media (min-width: 321px) and (max-width: 1023px) {
+            display: none;
+        }
+    }
+  } 
+  #site-navigation{
+    @media (min-width: 321px) and (max-width: 1023px) {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        .menu-toggle{
+            height: 21px;
+            width: 18px;
+            background-image: url("../images/menu.svg");
+            background-repeat: no-repeat;
+            background-color: transparent;
+            background-position-x: center;
+            border: none;
+            margin-top: 5px;
+          }
+        &.toggled{
+              &> div{
+                position: absolute;
+                width: 100%;
+                position: absolute;
+                background-color: #fff;
+                right: 0;
+                top: 94px;
+                padding: 0 20px;
+                border: 0;
+                height: 100vh;
+                overflow: auto;
+                z-index: 1;
+              }
+              ul{
+                  width: 100%;
+                  & >li{
+                    margin: 0!important;
+                    display: block;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid;
+                  }
+              }
+        }
+    }
+     & > div{
+        display: flex;
+        justify-content: flex-end;
+        @media (min-width: 321px) and (max-width: 1023px) {
+
+        }
+        #primary-menu{
+            & > li{
+                margin: 0.8rem 0 0 2.5rem;
+                a{
+                    color: #000;
+                }
+            }
+        }
+     } 
+  } 
+
+}
+
+article{
+    max-width: 1270px;
+    margin: 0 auto!important;
+    padding: 0 15px;
+    position: relative;
+    header#entry-title{
+
+    }
+    h1{
+        text-align: center;
+        font-size: 5.4rem;
+
+    }
+}
