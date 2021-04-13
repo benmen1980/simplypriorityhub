@@ -211,3 +211,30 @@ function simply_priority_stock($priority_stock_data){
     }  
 	return ['user' => $priority_stock_data['user'], 'item' =>  $priority_stock];
 }
+
+
+function searchfilter($query) {
+	$services = ['shopify','konimbo','istore','paxxi'];
+	$items = array();
+	foreach ($services as $service){
+		$items[] = $service.'_order';
+		$items[] = $service.'_ainvoice';
+		$items[] = $service.'_invoice';
+		$items[] = $service.'_receipt';
+		$items[] = $service.'_otc';
+		$items[] = $service.'_shipment';
+	}
+		if ($query->is_search && !is_admin() ) {
+			if(isset($_GET['post_type'])) {
+				$type = $_GET['post_type'];
+				if (in_array($type, $items)) {
+				$query->set('post_type',$items);
+				}
+			}       
+		}
+	//}
+	return $query;
+}
+add_filter('pre_get_posts','searchfilter');
+
+

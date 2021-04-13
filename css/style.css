@@ -1100,4 +1100,72 @@ article h1 {
   text-align: center;
   font-size: 5.4rem;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+main {
+  max-width: 1270px;
+  margin: 0 auto !important;
+  padding: 0 15px;
+  position: relative;
+}
+
+footer {
+  width: calc(100% - 8rem);
+  margin: auto;
+  padding: 2.8rem 0;
+  border-top: 1px solid #bdb7b7;
+}
+
+.search-page {
+  margin-bottom: 30px !important;
+}
+
+.search-page .entry-meta {
+  margin: 10px 0;
+}
+
+.search-page .entry-summary {
+  line-break: anywhere;
+}
+
+.logs_page form.search-form {
+  margin: 30px 0;
+}
+
+.logs_page h2.service_title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 3rem 0;
+}
+
+.logs_page article .item-wrapper {
+  cursor: pointer;
+}
+
+.logs_page article .item-wrapper h5.posted-on {
+  font-size: 16px;
+}
+
+.logs_page article .item-wrapper h2.entry-title {
+  text-decoration: underline;
+  margin: 10px 0;
+}
+
+.logs_page article .item-wrapper #logs_content {
+  display: none;
+  line-break: anywhere;
+}
+
+.logs_page article .btn_container #toggle_content {
+  background-color: #22428f;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
